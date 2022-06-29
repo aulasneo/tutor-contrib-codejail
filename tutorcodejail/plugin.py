@@ -24,8 +24,8 @@ config = {
 
 
 hooks.Filters.COMMANDS_INIT.add_item((
-    "codejail_apparmor",
-    ("codejail", "tasks", "codejail_apparmor", "init"),
+    "codejail-apparmor",
+    ("codejail", "tasks", "codejail-apparmor", "init"),
 ))
 
 

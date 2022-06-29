@@ -1,4 +1,4 @@
-codejail_apparmor-job:
+codejail-apparmor-job:
   image: ednxops/codejail_apparmor_loader:latest
   privileged: true
   volumes:
