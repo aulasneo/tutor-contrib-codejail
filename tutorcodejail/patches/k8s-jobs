@@ -1,0 +1,17 @@
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: codejail-apparmor-job
+  labels:
+    app.kubernetes.io/component: job
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: codejail-apparmor
+        image: ednxops/codejail_apparmor_loader:latest
+        env:
+          - name: CODEJAIL_SKIP_INIT
+            value: "{{ CODEJAIL_SKIP_INIT }}"

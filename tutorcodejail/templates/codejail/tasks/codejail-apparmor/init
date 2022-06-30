@@ -1,0 +1,5 @@
+if [[ -z "${CODEJAIL_SKIP_INIT}" ]]; then
+    /usr/bin/loader -logtostderr -v=2 /profiles
+else
+    echo "Skipping codejail init"
+fi

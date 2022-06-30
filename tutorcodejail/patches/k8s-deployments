@@ -13,8 +13,10 @@ spec:
     metadata:
       labels:
         app.kubernetes.io/name: codejailservice
+      {% if not CODEJAIL_DISABLE_K8S_SANDBOX %}
       annotations:
         container.apparmor.security.beta.kubernetes.io/codejailservice: "localhost/docker-edx-sandbox"
+      {% endif %}
     spec:
       containers:
         - name: codejailservice

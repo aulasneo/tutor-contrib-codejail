@@ -18,6 +18,8 @@ config = {
         "DOCKER_IMAGE": f"docker.io/ednxops/codejailservice:{__version__}",
         "APPARMOR_DOCKER_IMAGE": f"docker.io/ednxops/codejail_apparmor:{__version__}",
         "SANDBOX_PYTHON_VERSION": "3.8.6",
+        "DISABLE_K8S_SANDBOX": False,
+        "SKIP_INIT": ""
     },
     "overrides": {},
 }
